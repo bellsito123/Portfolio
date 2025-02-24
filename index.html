@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - _Dalem_</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background: url('tu-banner.gif') no-repeat center center/cover;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 3px solid #fff;
+        }
+        .profile h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .profile p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .discord-status {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #7289DA;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .services, .projects, .reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service, .project, .review {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px;
+            flex: 1 1 30%;
+            transition: transform 0.3s;
+        }
+        .service:hover, .project:hover, .review:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+        .dark-mode header {
+            color: #fff;
+        }
+        .dark-mode footer {
+            background: #222;
+        }
+        .dark-mode .section {
+            background: #444; /* Fondo de sección en modo oscuro */
+            color: #fff; /* Texto en blanco en modo oscuro */
+        }
+        .discord-button {
+            background-color: #7289DA;
+            color: white;
+            border: none;
+            padding: 15px 30px; /* Aumentar el tamaño del botón */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: flex; /* Para alinear la imagen y el texto */
+            align-items: center; /* Centrar verticalmente */
+            font-size: 1.2em; /* Aumentar el tamaño de la fuente */
+            margin-top: 20px; /* Espacio superior */
+            text-decoration: none; /* Sin subrayado */
+        }
+        .discord-button img {
+            width: 20px; /* Tamaño de la imagen */
+            height: 20px; /* Tamaño de la imagen */
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+        }
+        .discord-button:hover {
+            background-color: #5b6eae; /* Color de fondo al pasar el mouse */
+        }
+        .project {
+            text-align: center; /* Centrar el texto */
+        }
+        .project img {
+            width: 100%; /* Hacer que la imagen ocupe todo el ancho */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="profile">
+        <img src="_Dalem_.png" alt="_Dalem_">
+        <div>
+            <h1>_Dalem_</h1>
+            <p>Developer/Configurador & Staff de Minecraft</p>
+            <div class="discord-status">
+                Usuario de Discord: <strong>_Dalem_</strong>
+            </div>
+        </div>
+    </div>
+    <button class="button" id="toggleTheme">🌙</button>
+</header>
+
+<div class="container">
+    <section class="section" id="about">
+        <h2>Sobre mí</h2>
+        <p>¡Hola! Soy Dalem Un Configurador/Desarrollador & Staff En Servidores De Minecraft, Tengo Como Objetivo Mejorar Los Servidores En Los Que Trabajo Y Impulsar Mi Carrera Como Desarrollador/Staff.</p>
+        <a href="https://discord.com/users/954788544491180042" class="discord-button">
+            <img src="discord-icon.png" alt="Discord"> Añadir en Discord
+        </a>
+    </section>
+
+    <section class="section" id="services">
+        <h2>Mis Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Configuracion De Proxys</h3>
+                <p>Me encargo de configurar, optimizar la proxy del servidor.</p>
+            </div>
+            <div class="service">
+                <h3>Creacion de Modalidades</h3>
+                <p>Desarrollo/Configuro la modalidad que necesitas segun tus gustos o de la comunidad de tu servidor.</p>
+            </div>
+            <div class="service">
+                <h3>Configuración de Servidores</h3>
+                <p>Configuro servidores de Minecraft con plugins, optimizaciones para ofrecer una estabilidad al servidor.</p>
+            </div>
+            <div class="service">
+                <h3>Creacion de Bots de Discord</h3>
+                <p>Desarrollo Bots de Discord personalizados a tu gusto.</p>
+            </div>
+            <div class="service">
+                <h3>Moderacion De Servidores</h3>
+                <p>Modero Servidores de Minecraft para ofrecer una seguridad a el usuario y que hayan menos cheaters en el servidor.</p>
+            </div>
+            <div class="service">
+                <h3>Traduccion, Configuracion de Plugins</h3>
+                <p>Puedo Traducir, Configurar Plugins a tu gusto y el de tu comunidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Proyectos Actuales</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="GalactusMC.webp" alt="GalactusMC">
+                <h3>GalactusMC</h3>
+                <p>Actualmente trabajo en GalactusMC como configurador, espero ayudar al servidor ofreciendole servicios de configuracion de plugins y mas cosas.</p>
+        </div>
+    </section>
+
+    <section class="section" id="reviews">
+        <h2>Reseñas</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>"Es muy profesional en lo que hace, contribuyo al servidor en bastantes modalidades." - _bellalt_</p>
+            </div>
+            <div class="review">
+                <p>"Bastante bueno el servicio que presto como manager en zinocraft." - iLucxzs_</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 _Dalem_. Todos los derechos reservados.</p>
+    <a href="https://discord.com/users/954788544491180042" class="discord-button">
+        <img src="discord-icon.png" alt="Discord"> Añadir en Discord
+    </a>
+</footer>
+
+<script>
+    const button = document.getElementById('toggleTheme');
+    button.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        button.innerText = document.body.classList.contains('dark-mode') ? '🌞' : '🌙';
+    });
+</script>
+
+</body>
+</html>
